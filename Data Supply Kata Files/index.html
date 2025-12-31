@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Quiz Web App</title>
+        <meta name="author" content="Lisa Eapen" />
+        <link rel="stylesheet" href="styles.css">   
+    </head>
+
+    <body>
+        <!-- container for high score info -->
+        <div id="highScoreCounter"> 
+            <h3 id="hsTitle">Best Performace</h3>
+            <h3 id="highScoreDisplay">High Score:</h3>
+            <h3 id="hsDifficulty">Difficulty:</h3>
+            <h3 id="hsHints">Hints Used:</h3>
+        </div>
+            <!-- Quiz setup options -->
+        <h1 class="title">Setup Quiz:</h1>
+        <div id="optionsBox">
+            <div class="option">
+                <h2 id="optionName">Select Category:</h2>
+                <select id="categories" >
+                    <option value=""> ---Defalut--- </option>
+                </select>
+            </div>
+            <div class="option">
+                <h2 id ="optionName">Select Difficulty:</h2>
+                <select id="difficulty" >
+                    <option value=""> ---Defalut--- </option>
+                    <option value="easy"> Easy </option>
+                    <option value="medium"> Medium </option>
+                    <option value="hard"> Hard </option>
+                </select>
+            </div>
+            <div class="option">
+                <h2 id="optionName">Number of Questions:</h2>
+                <input type="number" id="numQuestions" min="1" max="50" value="10">
+            </div>
+        </div>
+        <div><button id="createQuiz">Create Quiz</button></div>
+
+        <!-- java script for index page-->
+        <script src="index.js"></script>
+    </body>
+
+</html>
